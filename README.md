@@ -18,17 +18,14 @@ This project was developed as part of my **Computer Programming** studies to dem
 * **Framework:** .NET 
 * **Environment:** Linux (Xubuntu) / VS Code
 
-## 💻 How to Run
 1. Clone the repository:
- Bash
-   git clone [https://github.com/Synepth/Student-Grading-In-C-Sharp.git](https://github.com/Synepth/Student-Grading-In-C-Sharp.git
-
-2.Navigate to the project folder:
-    Bash
-    cd Student-Grading-In-C-Sharp
+   ```bash
+   git clone [https://github.com/Synepth/Student-Grading-In-C-Sharp.git](https://github.com/Synepth/Student-Grading-In-C-Sharp.git)
+2. Navigate to the project folder:
+   bash
+   `cd Student-Grading-In-C-Sharp`
 3. Run the application:
-
-    Bash
-    dotnet run
-
-Developed by Synepth (Arda Köksal)
+   bash
+   `dotnet run`
+ 
+ 
