@@ -24,11 +24,11 @@ This project was developed as part of my **Computer Programming** studies to dem
    git clone [https://github.com/Synepth/Student-Grading-In-C-Sharp.git](https://github.com/Synepth/Student-Grading-In-C-Sharp.git
 
 2.Navigate to the project folder:
-  Bash
+    Bash
     cd Student-Grading-In-C-Sharp
 3. Run the application:
 
-  Bash
-dotnet run
+    Bash
+    dotnet run
 
 Developed by Synepth (Arda Köksal)
