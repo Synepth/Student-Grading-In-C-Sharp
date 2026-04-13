@@ -14,13 +14,13 @@ namespace GradeCalculator
         string conclusion = "Passed";
 
         Console.WriteLine("Enter the Student's First Name: ");
-        string studentFirstName = Console.ReadLine();
+        string? studentFirstName = Console.ReadLine();
 
         Console.WriteLine("Enter the Student's Last Name: ");
-        string studentLastName = Console.ReadLine();
+        string? studentLastName = Console.ReadLine();
 
         Console.WriteLine("Enter the Student's ID Number: ");
-        string studentID = Console.ReadLine();
+        string? studentID = Console.ReadLine();
 
         Console.WriteLine("Enter the Midterm Exam Score: ");
         double midTerm = Convert.ToDouble(Console.ReadLine());
@@ -73,4 +73,4 @@ namespace GradeCalculator
  }
 
 
-}/
+}
