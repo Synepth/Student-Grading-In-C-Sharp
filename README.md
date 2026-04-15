@@ -16,7 +16,7 @@ This project was developed as part of my **Computer Programming** studies to dem
 ## 🛠 Tech Stack
 * **Language:** C#
 * **Framework:** .NET 
-* **Environment:** Linux (Xubuntu) / VS Code
+* **Environment:** VS Code
 
 1. Clone the repository:
    ```bash
