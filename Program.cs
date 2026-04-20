@@ -12,7 +12,7 @@ namespace GradeCalculator
 
         string Grade = "";
         string conclusion = "Passed";
-
+        
         Console.WriteLine("Enter the Student's First Name: ");
         string? studentFirstName = Console.ReadLine();
 
@@ -33,31 +33,39 @@ namespace GradeCalculator
 
         Console.WriteLine("Enter the disciplinary status (true or false)");
         bool disciplinary = Convert.ToBoolean(Console.ReadLine());    
-        //Not Hesaplama
+        //Grade Calculation begins.
         double average = (midTerm * 0.4)+(final*0.6);
         if (average <= 100 && average >= 90)
             {
                 Grade = "AA";
             }
-            else if (average <= 89 && average >= 80 )
+            else if (average <= 89 && average >= 85 )
             {
                 Grade = "BA";
             }
-            else if (average <= 79 && average >= 70 )
+            else if (average <= 84 && average >= 80 )
             {
                 Grade = "BB";
             }
-            else if (average <= 69 && average >= 60 )
+            else if (average <= 79 && average >= 75 )
+            {
+                Grade = "CB";
+            }
+            else if (average <= 74 && average >= 70 )
             {
                 Grade = "CC";
             }
-            else if (average <=59 && average >=50)
+            else if (average <=69 && average >=60)
+            {
+                Grade = "DC";
+            }
+            else if (average <= 59 && average >= 50 )
             {
                 Grade = "DD";
             }
-            else if (average < 0 || average > 100)
+            else if (average < 0 || average > 100 || midTerm > 100 || midTerm < 0 || final > 100 || final < 0 )
             {
-                Grade = "ERROR: Unable To See Letter Grade Enter a Valid Score";
+                Grade = "ERROR";
             }
             else
             {
@@ -68,7 +76,13 @@ namespace GradeCalculator
                 conclusion = "Failed";
             }
             else {}
+            if (Grade == "ERROR")
+            {
+                throw new Exception("ERROR: Enter valid numbers for grading (0-100)");
+            }
+            else{
             Console.WriteLine($"\nStudent's Name: {studentFirstName} {studentLastName} School ID: {studentID} Grade: {Grade} Status: {conclusion} ");
+            }
     }
  }
 
